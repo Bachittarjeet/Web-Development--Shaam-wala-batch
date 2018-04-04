@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Login Panel
+
+	</title>
+
+	<style type="text/css">
+		#loginPanel{
+			height: auto;
+			width: 200px;
+			padding: 20px 20px 20px 20px;
+			background-color:grey;
+			border-radius: 5px;
+			color: white;
+			margin:0px auto;
+			margin-top: 20%;
+		}
+		.bde-text{
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+		input{
+			background-color: #f0f0f0;
+			border:black 1px solid;
+		}
+		.btn{
+			padding: 8px 10px 8px 10px;
+			width: auto; 
+			border-radius: 5px;
+			color: white;
+		
+		}
+		.danger{
+			background-color: red;
+		
+			transition: all ease 2s;
+		}
+		.success{
+			background-color: green;
+		}
+		.danger:hover{
+			background-color: white;
+			border:1px red solid;
+			color:red;
+			transition: all ease 2s;
+			transform: rotate(360deg);
+		}
+		.success:hover{
+			background-color: white;
+			border:1px green solid;
+			color:green;
+		}
+		
+
+	</style>
+</head>
+<body>
+	
+
+	<div id="loginPanel">
+		<table border="0" style="border-collapse: collapse;" >
+			<tr>
+				<td align="center" class="bde-text" colspan="2">Login Form</td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td>
+					<input type="text" autofocus="">
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="Password">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					<button class="btn success">Login</button>
+					<button class="btn danger">Cancel</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

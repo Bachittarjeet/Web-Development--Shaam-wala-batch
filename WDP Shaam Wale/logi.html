@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+		}
+		
+		input[type="Button"]{
+			padding: 8px 10px 8px 10px;
+			width: auto; 
+			border-radius: 5px;
+			color: white;
+			outline: none;
+		}
+		input[type="text"],input[type="Password"]{
+			background-color: #f0f0f0;
+		}
+		input[value="Login"]{
+			background-color: green;
+		}
+		input[value="Cancel"]{
+			background-color: red;
+		}
+
+		#loginDiv{
+			background-color: orange;
+			border-radius: 5px;
+			color: white;
+			height: 100px;
+			margin:20% auto;
+
+			vertical-align: middle;
+			padding: 20px 10px;
+			width: 210px;
+		}
+	</style>
+</head>
+<body>
+	<div id="loginDiv">
+		<table height="" width="200px">
+			<tr>
+				<th colspan="2">Login Form</th>
+			</tr>
+			<tr>
+				<td>
+					Username
+				</td>
+				<td>
+					<input type="text" placeholder="Ex: Bj@gmail.com" autofocus="" id="username">
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="Password" placeholder="Ex: Admin@123" id="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="Button" value="Login" onclick="display()">
+					<input type="Button" value="Cancel"> 
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		
+		function display(){
+			
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+
+			alert("Username = "+ username +"Pasword: "+ password);
+
+		}
+	</script>
+</body>
+</html>

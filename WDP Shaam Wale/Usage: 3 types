@@ -1,0 +1,18 @@
+Usage: 3 types 
+	1. Inline - Style Attribute - Highest Priority
+	2. Internal - Style Tag - Middle Priority 
+		> Selecters
+			- # ID - 1
+			- . Class - 3
+			- p Tag/Type - 2
+			- * Universal - 4   
+	3. External - Css File - Lowest Priority
+
+
+JavaScript(JS):
+	- Single Threaded Script language
+	- No Relation with Java
+	- Enhance the html pages
+		> DOM Manipulation 
+		> Interactivity
+		> Client Side Validations	 	
