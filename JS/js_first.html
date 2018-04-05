@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Javascript First
+	</title>
+</head>
+<body>
+	<form name="frm">
+		<table height="100px" width="200px" border="1"> 
+			<tr>
+				<th colspan="2">
+					Calculator
+				</th>
+			</tr>
+			<tr>
+				<th>A</th>
+				<th><input type="text" id="txtA" autofocus></th>
+			</tr>
+			<tr>
+				<th>B</th>
+				<th><input type="number" id="txtB"></th>
+			</tr>
+			<tr>
+				<th>Result</th>
+				<th><input type="text" id="txtR" readonly></th>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input type="button" value="OTP" onclick="OTP();">
+					<input type="button" value="SUB" onclick="SUB();">
+					
+					<input type="button" value="Sum" onclick="doSum();">
+					<button onclick="clear1()">Clear</button>	
+					<input type="reset" value="Clear Form" />
+				</th>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+		//PERFORMING SUBTRA
+		function SUB(){
+			var txtA = document.getElementById('txtA').value;
+			var txtB = document.getElementById('txtB').value;
+			var txtR = document.getElementById('txtR');
+			if(txtA=='' || txtB==''){
+				alert("Enter Both Values please!");
+			} else {	
+				if(!isNaN(txtA) && !isNaN(txtB) ){
+					//alert(parseInt(txtA)+parseInt(txtB));	
+					txtR.value = parseInt(txtA)-parseInt(txtB); 
+
+				} else {
+					alert("Wrong input!!");
+					txtR.value=0;
+
+
+
+		}
+	}
+}
+		// Resetiing the form
+		function clear1(){
+			document.frm.reset();
+		}	
+
+		//main Calculation for addition
+		function doSum(){
+			
+			var txtA = document.getElementById('txtA').value;
+			var txtB = document.getElementById('txtB').value;
+			var txtR = document.getElementById('txtR');
+			if(txtA=='' || txtB==''){
+				alert("Enter Both Values please!");
+			} else {	
+				if(!isNaN(txtA) && !isNaN(txtB) ){
+					//alert(parseInt(txtA)+parseInt(txtB));	
+					txtR.value = parseInt(txtA)+parseInt(txtB); 
+
+				} else {
+					alert("Wrong input!!");
+					txtR.value=0;
+
+				}	
+			}	
+
+		}
+
+		//testing OTP function 
+		function OTP(){
+			
+			if(confirm("Are you sure?")){
+				var otp = prompt("Enter OTP");
+				if(otp){
+					alert(otp);
+				}else{
+					alert("No value!!!")
+				}
+			}	
+		}
+
+
+
+	</script>
+
+
+
+</body>
+</html>

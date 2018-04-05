@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Js 2
+	</title>
+</head>
+<body>
+	
+	<select name="city" id="city"></select>
+
+	<button onclick="doSomething()">Click Me</button>
+
+
+	<script type="text/javascript">
+		
+		var city_short = ["Moh","Amr","Bti"];
+		var city_full = ["Mohali","Amritsar","Bathinda"];
+
+		var city = document.getElementById('city');
+
+		function doSomething() {
+			
+			city.innerHTML = '<option value="none"> Select </option>';	
+
+			for (var i = 0; i < city_short.length; i++) {
+				
+				city.innerHTML += '<option value="'+ city_short[i]+'">'+ city_full[i] +'</option>';	
+
+
+			}
+		}
+		
+		
+
+
+	</script>
+</body>
+</html>

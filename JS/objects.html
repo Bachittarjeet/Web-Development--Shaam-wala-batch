@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Dashing Code 
+	</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		var persons  = [
+		{
+			name : "Raka",
+			age : 21,
+			salary: 25000,
+			pp : 'img/raka-dslr.jpg'	
+		},
+		{
+			name : "Gabbar",
+			age : 21,
+			salary: 25000,
+			pp : 'img/gabbar-meme.jpg'	
+		},
+		{
+			name : "Basanti",
+			age : 21,
+			salary: 25000,
+			pp : 'img/basanti-3d.jpg'	
+		}
+		];
+
+		document.write("<table  border=1 ><tr><th>Name<th>Age<th>Salary<th>Profile Picture")
+
+		for (var i = 0; i < persons.length; i++) {
+			document.write("<tr><td> "+ persons[i].name);
+			document.write("<td>"+ persons[i].age);
+			document.write("<td>"+ persons[i].salary);
+			document.write("<td><img src='"+ persons[i].pp +"' height='100px' width='100px'></tr>");
+
+		}
+		document.write("</table>")
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Js 2
+	</title>
+</head>
+<body>
+	
+	<select name="city" id="city">
+		<option value="none">
+			Select
+		</option>
+		<option value="moh">
+			Mohali
+		</option>
+		<option value="amr" selected>
+			Amritsar
+		</option>
+
+	</select>	
+	<button onclick="doSomething()">Click Me</button>
+
+
+	<script type="text/javascript">
+		
+		var city = document.getElementById('city');
+
+		function doSomething() {
+			alert(city.value);
+			doSomethingElse();
+		}
+		function doSomethingElse() {
+			alert(city.value);
+		}
+		
+
+
+	</script>
+</body>
+</html>
