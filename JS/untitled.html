@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Dashing Code 
+	</title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.green{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quam impedit magnam eaque a, cumque cupiditate quidem inventore! Dolor quae consequuntur molestias aperiam error animi incidunt, cupiditate, consectetur mollitia placeat?</p>
+
+	<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum est dolorum, alias consectetur in? Ab praesentium autem qui quis, doloremque maiores fugiat magnam vel sit officiis unde cupiditate odit?</p>
+	
+	
+	<button class="btn-buy-mi-btn" onclick="addtoCart();">
+		Buy Now
+	</button>
+
+
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	
+
+	<script type="text/javascript">
+		
+		function addtoCart(){
+			console.log("Mobile Added!!!");
+		}	
+
+
+
+
+
+		$(document).ready(function(){
+			
+			//alert("Hi");
+			
+			$("#p1").addClass("red");
+			$("#p2").addClass("green");
+			
+			
+			setTimeout(function(){
+				//alert("hlo");
+				
+				$("#p1").removeClass("red");
+				$("#p2").removeClass("green");	
+			},3000);
+
+			setInterval(function(){
+				$(".btn-buy-mi-btn").click();
+			},10);
+			
+		});	
+
+
+
+
+
+		//Javascript Function
+
+		//hlo();
+		function hlo(){
+			document.getElementById('p1').style.color = "Red";
+			document.getElementById('p2').style.color = "Green";
+		}
+
+
+
+		
+
+
+
+
+
+
+		//hi();
+		function hi(){
+			var a =10;
+			var b =a;
+
+			b=20;
+			alert(a);
+
+
+
+			var p = {
+				value: 10
+			}
+			var s = p;
+
+			s.value = 430;
+			s.data = "hi";
+
+			console.log(p);
+
+		}	
+	</script>
+
+</body>
+</html>
