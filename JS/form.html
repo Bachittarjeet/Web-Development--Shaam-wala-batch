@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Form
+	</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+	<table border="1" width="300px">
+		<tr>
+			<td>Username</td>
+			<td><input id="username" name="username"  type="text"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input id="password" name="password" type="password"></td>
+		</tr>
+		<tr>
+			<td>Quantity</td>
+			<td><input id="quantity" name="quantity" type="number"></td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" id="male" name="gender" value="Male"> Male &nbsp;|&nbsp;
+				<input type="radio" id="female" name="gender" value="Female"> Female
+			</td>
+		</tr>
+		<tr>
+			<td>
+				CheckBox
+			</td>
+			<td>
+				<input type="CheckBox" id="php" name="php" value="php"> PHP
+				<input type="CheckBox" id="java" name="java" value="java"> Java
+				<input type="CheckBox" id="wdp" name="wdp" value="wdp"> WDP
+
+			</td>
+		</tr>
+		<tr>
+			<td>Date</td>
+			<td><input type="date" name="date" id="date"></td>
+		</tr>
+		<tr>
+			<td>Age Group</td>
+			<td>
+				<select name="age-group" id="age-group">
+					<option value="0-6">0-6 Years</option>
+					<option value="7-13">7-13 Years</option>
+					<option value="13-19">13-19 Years</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>fav. Color</td>
+			<td><input type="color" name="color" id="color"></td>
+		</tr>
+		<tr>
+			<td>Range</td>
+			<td><input id="range" name="range" type="range"></td>
+		</tr>
+		<tr>
+			<td>time</td>
+			<td><input type="time" name="time" id="time"></td>
+		</tr>
+		<tr>
+			<td>Description</td>
+			<td>
+				<textarea name="desc" id="desc"  cols="35" rows="5"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>File</td>
+			<td><input name="file" id="file" type="file" accept="image/*"></td>
+		</tr>
+		<tr>
+			<td>Buttons</td>
+			<td>
+				<input type="submit" name="submit" id="submit" value="Submit">
+				<input type="reset" name="reset" id="reset" value="Clear">
+				<input type="button" id="btn" name="btn" value="Button">
+			</td>
+		</tr>
+
+	</table>
+	</form>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			
+			//$("#username").blur(doSomething);
+
+			//$("#password").blur(doSomething);
+			
+			$("#quantity").blur(doSomething);
+
+			$("#male,#female").click(doSomething);
+			//$("#female").click(doSomething);
+
+			$msg="";
+
+			$("#php,#java,#wdp").click(function(){
+
+				//Kisi Aur Din	
+
+			});
+			$("#age-group").change(doSomething);
+
+
+
+			function doSomething(){
+				
+				alert($(this).val());
+			
+			}
+
+
+
+
+
+
+
+
+
+		});
+	</script>
+</body>
+</html>

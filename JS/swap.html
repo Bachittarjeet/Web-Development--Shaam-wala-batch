@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		JQuery Swap
+	</title>
+	<style type="text/css">
+		img{
+			height: 200px;
+			width: 200px; 
+			margin-left: 10px;
+			border:1px solid black;
+		}
+		#swapBtn{
+			padding: 8px 10px;
+			background-color: orange;
+			border:2px red solid;
+			border-radius:5px;
+			color:white;
+			font-size:20px;
+			width: 108px;
+			margin-left: 20%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img id="img1" src="img/raka-dslr.jpg" alt="">
+		<img id="img2" src="img/gabbar-meme.jpg" alt="">
+	</div>
+	<div>
+		<div id="swapBtn">
+			Swap Images
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(
+			function(){
+
+				$("#swapBtn").click(function(){
+
+					var temp = $("#img1").attr('src');
+					$("#img1").attr(
+						'src',
+						$("#img2").attr('src')
+					);
+					$("#img2").attr('src',temp); 	
+
+				});
+
+			}
+		);
+	</script>
+
+
+
+
+</body>
+</html>
