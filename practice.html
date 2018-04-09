@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Practice
+	</title>
+	<style type="text/css">
+		#me{
+			border:2px black solid;
+			background: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	
+	<button id="show">Show</button>
+	<button id="hide">Hide</button> 
+	<button id="toggle">Toggle</button>
+
+	<div id="me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vel exercitationem assumenda veniam quibusdam facere ipsum, delectus molestiae! Dicta dolorem ipsa repudiandae, nisi quo optio magni, minus quas obcaecati fugiat?</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+			
+
+		$(document).ready(function(){
+
+			$("#hide").click(function(){
+				$("#me").slideUp(2000);
+			});	
+
+			$("#show").click(function(){
+				$("#me").show(1000);
+			});	
+
+			$("#toggle").click(function(){
+				$("#me").slideToggle(100);
+			});
+		});
+
+	</script>
+</body>
+</html>
